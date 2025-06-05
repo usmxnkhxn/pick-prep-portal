@@ -6,6 +6,6 @@ export const config = {
     logoUrl: undefined, // Set to logo URL or leave undefined for initials
   },
   api: {
-    webhookUrl: "https://webhook.site/your-webhook-url", // Replace with actual webhook URL
+    webhookUrl: "https://usmxn.app.n8n.cloud/webhook/capper-picks", // Replace with actual webhook URL
   }
 };
