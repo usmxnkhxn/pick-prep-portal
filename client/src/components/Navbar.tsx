@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'wouter';
 import { Upload, Home, History } from 'lucide-react';
 
 interface NavbarProps {
@@ -9,7 +9,7 @@ interface NavbarProps {
 }
 
 const Navbar = ({ capperName, logoUrl }: NavbarProps) => {
-  const location = useLocation();
+  const [location] = useLocation();
 
   const navItems = [
     { path: '/', label: 'Dashboard', icon: Home },
@@ -37,7 +37,7 @@ const Navbar = ({ capperName, logoUrl }: NavbarProps) => {
           <div className="flex space-x-8">
             {navItems.map((item) => {
               const Icon = item.icon;
-              const isActive = location.pathname === item.path;
+              const isActive = location === item.path;
               
               return (
                 <Link

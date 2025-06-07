@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'wouter';
 import Layout from '../components/Layout';
 import { config } from '../config/config';
 import { TrendingUp, Upload, Clock, Users } from 'lucide-react';
@@ -68,7 +69,7 @@ const Dashboard = () => {
         <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
           <h2 className="text-xl font-semibold text-gray-900 mb-4">Quick Actions</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <a
+            <Link
               href="/add-picks"
               className="group p-4 border border-gray-200 rounded-lg hover:border-blue-300 hover:bg-blue-50 transition-all duration-200"
             >
@@ -81,9 +82,9 @@ const Dashboard = () => {
                   <p className="text-gray-500">Upload today's betting selections</p>
                 </div>
               </div>
-            </a>
+            </Link>
             
-            <a
+            <Link
               href="/history"
               className="group p-4 border border-gray-200 rounded-lg hover:border-blue-300 hover:bg-blue-50 transition-all duration-200"
             >
@@ -96,7 +97,7 @@ const Dashboard = () => {
                   <p className="text-gray-500">See your previous picks</p>
                 </div>
               </div>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
