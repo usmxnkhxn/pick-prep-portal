@@ -42,7 +42,7 @@ const Navbar = ({ capperName, logoUrl }: NavbarProps) => {
               return (
                 <Link
                   key={item.path}
-                  to={item.path}
+                  href={item.path}
                   className={`inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-colors duration-200 ${
                     isActive
                       ? 'border-blue-500 text-blue-600'
