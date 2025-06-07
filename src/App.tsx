@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import AddPicks from "./pages/AddPicks";
 import History from "./pages/History";
+import MemberDashboard from "./pages/MemberDashboard";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -21,6 +22,7 @@ const App = () => (
           <Route path="/" element={<Dashboard />} />
           <Route path="/add-picks" element={<AddPicks />} />
           <Route path="/history" element={<History />} />
+          <Route path="/member" element={<MemberDashboard />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
